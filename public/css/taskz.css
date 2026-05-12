@@ -94,7 +94,7 @@ code { font-family: "Fira Code", monospace; font-size: 11px; color: var(--ink-te
 .board { display: grid; grid-template-columns: repeat(4, minmax(220px, 1fr)); gap: var(--sp-3); align-items: start; }
 .board-column { background: var(--surface-overlay); border-radius: var(--r-lg); min-height: 360px; padding: var(--sp-3); }
 .board-column header { display: flex; justify-content: space-between; margin-bottom: var(--sp-3); font-weight: 700; color: var(--ink-secondary); }
-.task-card { background: var(--surface-raised); border: 1px solid var(--border-default); border-left: 3px solid var(--priority-medium); border-radius: var(--r-lg); box-shadow: var(--shadow-1); padding: var(--sp-4); margin-bottom: var(--sp-3); }
+.task-card { background: var(--surface-raised); border: 1px solid var(--border-default); border-radius: var(--r-lg); box-shadow: var(--shadow-1); padding: var(--sp-4); margin-bottom: var(--sp-3); }
 .task-card:hover { box-shadow: var(--shadow-2); }
 .priority-0 { border-left-color: var(--priority-none); }
 .priority-1 { border-left-color: var(--priority-low); }
@@ -153,13 +153,7 @@ code { font-family: "Fira Code", monospace; font-size: 11px; color: var(--ink-te
 .workspace-grid { grid-template-columns: minmax(0, 1fr) 320px; max-width: 100%; }
 .board { display: flex; gap: var(--sp-3); align-items: stretch; overflow-x: auto; padding-bottom: var(--sp-2); max-width: 100%; }
 .board-column { flex: 0 0 270px; }
-.task-card { position: relative; border-left: 1px solid var(--border-default); overflow: visible; }
-.task-card::before { content: ""; position: absolute; top: 0; left: 14px; right: 14px; height: 2px; border-radius: 0 0 3px 3px; background: var(--priority-medium); opacity: .75; }
-.priority-0::before { background: var(--priority-none); }
-.priority-1::before { background: var(--priority-low); }
-.priority-2::before { background: var(--priority-medium); }
-.priority-3::before { background: var(--priority-high); }
-.priority-4::before { background: var(--priority-critical); }
+.task-card { position: relative; overflow: visible; }
 
 .task-details { border-top: 0; padding-top: 0; }
 .task-details[open] summary { opacity: 0; pointer-events: none; }
