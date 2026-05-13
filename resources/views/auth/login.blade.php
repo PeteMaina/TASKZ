@@ -4,7 +4,7 @@
 <main class="auth-layout">
     <section class="auth-copy">
         <span class="eyebrow">TASKZ</span>
-        <h1>Developer's workspace, client commitments.</h1>
+        <h1>Developer's best Task Manager.</h1>
         <p>Log in, create a workspace, create a project, then run the sprint loops and more..</p>
     </section>
 
@@ -16,7 +16,7 @@
         </div>
         <label>Email <input name="email" type="email" value="{{ old('email') }}" required autofocus></label>
         <label>Password <input name="password" type="password" required></label>
-        <label class="check-row"><input name="remember" type="checkbox" value="1"> Remember me</label>
+        <label class="check-row"><input name="remember" type="checkbox" value="0"> Remember me</label>
         @if ($errors->any())
             <p class="form-error">{{ $errors->first() }}</p>
         @endif
